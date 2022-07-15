@@ -31,7 +31,7 @@ const Reset = () => {
                     <p className={styles.address}>Address</p>
                 </div>
                 <div className={styles.box}>
-                    <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', margin: '52px 32px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', margin: '52px 32px' }}>
                         <h2 style={{ marginRight: 103 }}>Outlet Owner Details</h2>
                         <form onSubmit={(e) => { handleSubmit(e, 'none') }}>
                             <div className='form-group'>
@@ -54,6 +54,7 @@ const Reset = () => {
 
                         </form>
                     </div>
+
                 </div>
                 <button onClick={(e) => handleSubmit(e, '/business/register')} type='submit' href="#." className="btn btn-success submit" name='submit' >Next</button>
             </div>

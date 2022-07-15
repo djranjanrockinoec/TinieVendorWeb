@@ -119,12 +119,17 @@ input[type="checkbox"] {
   font-size:18px;
 }
 
-.otp:hover,
-.submit:hover,
+.otp:hover,.submit:hover {
+  background-color: #34EBEB !important;
+  opacity:0.8;
+}
+
 .otp:focus,
 .submit:focus {
-  background-color: #34EBEB !important;
+  background-color: #065987 !important;
+  outline:none !important;
 }
+
 
 .hr {
   height: 1px;
