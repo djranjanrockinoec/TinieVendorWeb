@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 
-function Success() {
+const Success = () => {
 
     const router = useRouter()
 

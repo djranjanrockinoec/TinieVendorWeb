@@ -1,0 +1,53 @@
+
+
+.contain {
+    padding: 53px 92px;
+}
+
+.contain p {
+    font-weight:400;
+    font-size:24px;
+}
+
+.basic {
+    color: #065987;
+}
+
+.business {
+    color: #BBBBBB;
+    margin:0 48px;
+}
+
+.address {
+    color:#BBBBBB;
+}
+
+.contain .box {
+    height:420px;
+    border: 0.2px solid #BBBBBB;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.contain .box input {
+    margin:0 !important;
+    height:44px !important;
+    width:590px;
+}
+
+.contain .box form {
+    height: 44px !important;
+}
+
+.contain .box p {
+    text-align:left;
+    font-weight:400;
+    font-size:14px;
+}
+
+.contain .box h2 {
+    font-weight:700;
+    font-size:20px;
+    color:#000000;
+}
+

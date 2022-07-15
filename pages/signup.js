@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import Nav from './components/nav'
 
-function App() {
+const Signup = () => {
     const router = useRouter()
 
     const [email, setEmail] = useState('');
@@ -14,9 +14,7 @@ function App() {
         e.preventDefault();
 
 
-        if (path === '/signup') {
-            router.push(path)
-        } else if (path === '/reset') {
+        if (path === '/business') {
             router.push(path)
         } else { return }
     };
@@ -55,7 +53,7 @@ function App() {
                             <input type="text" className="form-control" name="confirm" style={{ borderRadius: 5, height: 40, marginBottom: 20 }} placeholder="Confirm New Password*" onChange={(e) => setOtpPhone(e.target.value)} required />
                         </div>
 
-                        <button onClick={(e) => handleSubmit(e, '/signup')} type='submit' href="#." className="btn btn-success submit" name='submit' >Reset Password</button>
+                        <button onClick={(e) => handleSubmit(e, '/business')} type='submit' href="#." className="btn btn-success submit" name='submit' >Reset Password</button>
                     </form>
                 </div>
 
@@ -70,4 +68,4 @@ function App() {
 }
 
 
-export default App;
+export default Signup;

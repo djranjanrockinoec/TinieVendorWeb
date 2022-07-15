@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import Nav from './components/nav'
 
-function App() {
+const Reset = () => {
     const router = useRouter()
 
     const [email, setEmail] = useState('');
@@ -70,4 +70,4 @@ function App() {
 }
 
 
-export default App;
+export default Reset;

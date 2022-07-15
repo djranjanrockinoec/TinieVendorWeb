@@ -2,9 +2,20 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import Nav from './components/nav'
+import { useMediaQuery } from 'react-responsive'
 
-function App() {
+const App = () => {
     const router = useRouter()
+
+    const isMobile = useMediaQuery({
+        query: '(max-width: 480px)'
+    })
+    const isDesktop = useMediaQuery({
+        query: '(min-width: 768px)'
+    })
+    const isPad = useMediaQuery({
+        query: '(min-width: 744px) and (max-width:1024px)'
+    })
 
     const [email, setEmail] = useState('');
     const [otpEmail, setOtpEmail] = useState('');
@@ -14,7 +25,7 @@ function App() {
         e.preventDefault();
 
 
-        if (path === '/signup') {
+        if (path === '/business') {
             router.push(path)
         } else if (path === '/reset') {
             router.push(path)
@@ -65,7 +76,7 @@ function App() {
                                 </>
                 <p style={{ fontSize: 12 }}><a onClick={(e) => handleSubmit(e, '/reset')}>Forgot Password?</a></p>
                             </div>
-                            <button onClick={(e) => handleSubmit(e, '/signup')} type='submit' href="#." className="btn btn-success submit" name='submit' >Login</button>
+                            <button onClick={(e) => handleSubmit(e, '/business')} type='submit' href="#." className="btn btn-success submit" name='submit' >Login</button>
                         </form>
                     </div>
               

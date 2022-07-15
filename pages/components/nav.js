@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-function Nav () {
+const Nav = () => {
     return (
         <nav className="navbar navbar-inverse">
             <div className="container-fluid">
