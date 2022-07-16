@@ -13,6 +13,9 @@ function MyApp({ Component, pageProps }) {
         <link
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"
         ></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="</link>stylesheet"></link>
       </Head>
       <script
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"

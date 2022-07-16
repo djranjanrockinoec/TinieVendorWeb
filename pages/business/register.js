@@ -31,7 +31,7 @@ const Reset = () => {
                     <p className={styles.address}>Address</p>
                 </div>
                 <div className={styles.box}>
-                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '52px 32px'}}>
+                    <div className={styles.center}>
                         <form onSubmit={(e) => { handleSubmit(e, 'none') }}>
                                 <div className='form-group'>
                                     <input type="text" className="form-control" name="business" placeholder="Name of Your Business*" onChange={(e) => setOtpPhone(e.target.value)} required />

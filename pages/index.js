@@ -74,7 +74,7 @@ const App = () => {
                                         <p style={{ fontSize: 12 }}>Remember Me</p>
                                     </div>
                                 </>
-                <p style={{ fontSize: 12 }}><a onClick={(e) => handleSubmit(e, '/reset')}>Forgot Password?</a></p>
+                <p style={{ fontSize: 12 }}><a href="/reset">Forgot Password?</a></p>
                             </div>
                             <button onClick={(e) => handleSubmit(e, '/business')} type='submit' href="#." className="btn btn-success submit" name='submit' >Login</button>
                         </form>

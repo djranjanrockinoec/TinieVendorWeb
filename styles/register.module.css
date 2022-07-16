@@ -53,11 +53,11 @@
     font-weight:700;
 }
 
-.flex {
+.center {
+    padding: 32px;
     display:flex;
-    justify-content:flex-start;
-    align-items:flex-start;
-    margin:52px 32px;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -75,12 +75,14 @@
         margin: 0 20px;
     }
 
-    .contain .box input {
+    .contain .box input,
+    .contain .box select {
         width: 100%;
     }
 
     .flex {
         flex-direction: column;
+        align-items: center;
     }
 
 }
@@ -89,7 +91,8 @@
     .contain {
         padding: 20px 40px;
     }
-    .contain .box input {
+    .contain .box input,
+    .contain .box select {
         width: 100%;
     }
     .business {

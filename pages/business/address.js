@@ -32,23 +32,23 @@ const Reset = () => {
                     <p className={styles.address}>Address</p>
                 </div>
                 <div className={styles.box}>
-                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '52px 32px'}}>
+                    <center>
                         <form onSubmit={(e) => { handleSubmit(e, 'none') }}>
-                                <div className='form-group'>
-                                    <input type="text" className="form-control" name="address" placeholder="Address (House No, Street)*" onChange={(e) => setOtpPhone(e.target.value)} required />
-                                </div>
-                                <div className='form-group'>
-                                    <input type="text" className="form-control" name="pincode" placeholder="Pincode*" onChange={(e) => setOtpPhone(e.target.value)} required />
-                                </div>
-                                <div className='form-group'>
-                                    <input type="text" className="form-control" name="pincode" placeholder="City*" onChange={(e) => setOtpPhone(e.target.value)} required />
-                                </div>
+                            <div className='form-group'>
+                                <input type="text" className="form-control" name="address" placeholder="Address (House No, Street)*" onChange={(e) => setOtpPhone(e.target.value)} required />
+                            </div>
+                            <div className='form-group'>
+                                <input type="text" className="form-control" name="pincode" placeholder="Pincode*" onChange={(e) => setOtpPhone(e.target.value)} required />
+                            </div>
+                            <div className='form-group'>
+                                <input type="text" className="form-control" name="pincode" placeholder="City*" onChange={(e) => setOtpPhone(e.target.value)} required />
+                            </div>
                             <div className='form-group'>
                                 <input type="text" className="form-control" name="pincode" placeholder="State*" onChange={(e) => setOtpPhone(e.target.value)} required />
                             </div>
- 
-                            </form>   
-                    </div>
+
+                        </form>
+                    </center>
                     <div id="googleMap" style={{ width: '100%', height: 400 }}></div>
                 </div>
                 <button onClick={(e) => handleSubmit(e, '/business')} type='submit' href="#." className="btn btn-success submit" name='submit' >Next</button>
