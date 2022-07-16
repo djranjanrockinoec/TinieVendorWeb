@@ -40,19 +40,19 @@ const Reset = () => {
                     <form onSubmit={(e) => { handleSubmit(e, 'none') }}>
 
                         <div className='form-group'>
-                            <input type="email" className="form-control" name="email" style={{ borderRadius: 5, marginBottom: 20, height: 40 }} placeholder="Enter Email ID*" onChange={(e) => setEmail(e.target.value)} required />
+                            <input type="email" className="form-control" name="email" placeholder="Enter Email ID*" onChange={(e) => setEmail(e.target.value)} required />
                         </div>
 
                         <div className='form-group'>
-                            <input type="text" className="form-control" name="otp-email" style={{ borderRadius: 5, height: 40, marginBottom: 20 }} placeholder="Enter OTP Sent to Your Email*" onChange={(e) => setOtpEmail(e.target.value)} required />
+                            <input type="text" className="form-control" name="otp-email" placeholder="Enter OTP Sent to Your Email*" onChange={(e) => setOtpEmail(e.target.value)} required />
                         </div>
 
                         <div className='form-group'>
-                            <input type="text" className="form-control" name="pass" style={{ borderRadius: 5, height: 40, marginBottom: 20 }} placeholder="Enter New Password*" onChange={(e) => setOtpPhone(e.target.value)} required />
+                            <input type="text" className="form-control" name="pass" placeholder="Enter New Password*" onChange={(e) => setOtpPhone(e.target.value)} required />
                         </div>
 
                         <div className='form-group'>
-                            <input type="text" className="form-control" name="confirm" style={{ borderRadius: 5, height: 40, marginBottom: 20 }} placeholder="Confirm New Password*" onChange={(e) => setOtpPhone(e.target.value)} required />
+                            <input type="text" className="form-control" name="confirm" placeholder="Confirm New Password*" onChange={(e) => setOtpPhone(e.target.value)} required />
                         </div>
 
                         <button onClick={(e) => handleSubmit(e, '/signup')} type='submit' href="#." className="btn btn-success submit" name='submit' >Reset Password</button>

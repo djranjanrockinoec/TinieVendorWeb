@@ -17,7 +17,7 @@ const Nav = () => {
                 </div>
                 <div className="collapse navbar-collapse" id="myNavbar">
                     <ul className="nav navbar-nav navbar-right">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="#">Get to Know Us</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Login</a></li>

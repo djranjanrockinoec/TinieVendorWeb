@@ -24,6 +24,7 @@
 
 .contain .box {
     height:100%;
+    width:100%;
     border: 0.2px solid #BBBBBB;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -50,5 +51,49 @@
 
 .contain .box .docs {
     font-weight:700;
+}
+
+.flex {
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin:52px 32px;
+}
+
+
+@media (max-width: 480px) {
+    .contain {
+        padding: 20px 20px;
+    }
+
+    .contain p {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .business {
+        margin: 0 20px;
+    }
+
+    .contain .box input {
+        width: 100%;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width:1024px) {
+    .contain {
+        padding: 20px 40px;
+    }
+    .contain .box input {
+        width: 100%;
+    }
+    .business {
+        margin: 0 30px;
+    }
 }
 

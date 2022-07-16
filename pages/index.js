@@ -51,15 +51,15 @@ const App = () => {
                         <form onSubmit={(e) => { handleSubmit(e, 'none') }}>
 
                             <div className='form-group'>
-                                <input type="email" className="form-control" name="email" style={{ borderRadius: 5, marginBottom: 20, height: 40 }} placeholder="Enter Email ID*" onChange={(e) => setEmail(e.target.value)} required />
+                                <input type="email" className="form-control" name="email" placeholder="Enter Email ID*" onChange={(e) => setEmail(e.target.value)} required />
                             </div>
 
                             <div className='form-group'>
-                                <input type="text" className="form-control" name="otp-email" style={{ borderRadius: 5, height: 40, marginBottom: 20 }} placeholder="Enter OTP Sent to Your Email*" onChange={(e) => setOtpEmail(e.target.value)} required />
+                                <input type="text" className="form-control" name="otp-email" placeholder="Enter OTP Sent to Your Email*" onChange={(e) => setOtpEmail(e.target.value)} required />
                             </div>
 
                             <div className='form-group'>
-                                <input type="text" className="form-control" name="otp-phone" style={{ borderRadius: 5, height: 40, marginBottom: 20 }} placeholder="Enter Registered Mobile Number*" onChange={(e) => setOtpPhone(e.target.value)} required />
+                                <input type="text" className="form-control" name="otp-phone" placeholder="Enter Registered Mobile Number*" onChange={(e) => setOtpPhone(e.target.value)} required />
                             </div>
 
                             <div className="form-group" style={{display:'flex', justifyContent:'left'}}>
